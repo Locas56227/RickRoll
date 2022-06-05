@@ -10,9 +10,27 @@
   gtag('config', 'G-VXPHC0X1PH');
 </script>
 
+<script type="text/javascript">
+    _record = 0;
+    var myTitle = document.title;
+    function titleBlink(){
+      _record++;
+      if(_record==3){
+        _record=1;
+      }
+      if(_record==1){
+        document.title='NSFW'+myTitle;
+      }
+      if(_record==2){
+        document.title='WARNING'+myTitle;
+      }
+      setTimeout("titleBlink()",500);
+    }
+    titleBlink();
+    </script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<title>NSFW</title>
 <link rel="icon" href="./favicon.ico"/>
 <link rel="preconnect" href="https://fonts.gstatic.cn">
 <link href="https://fonts.googleapis.cn/css2?family=Inter:wght@400;500;900&amp;display=swap" rel="stylesheet">
